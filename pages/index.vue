@@ -23,7 +23,8 @@ export default {
       title: "Event Listing"
     };
   },
-  // async asyncData(ctx) {
+  //
+  //async asyncData(ctx) {
   //   try {
   //     let response = await EventService.getEvents();
   //     // let response =   await ctx.$axios.get("http://localhost:3000/events");
