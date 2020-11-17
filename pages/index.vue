@@ -1,6 +1,6 @@
 <template>
   <div :style="{ padding: '10px' }">
-    <h1>Events Ben</h1>
+    <h1>Events Nuxt Extraganza</h1>
 
     <EventCard
       v-for="(event, index) in events"
@@ -23,18 +23,6 @@ export default {
       title: "Event Listing"
     };
   },
-  //
-  //async asyncData(ctx) {
-  //   try {
-  //     let response = await EventService.getEvents();
-  //     // let response =   await ctx.$axios.get("http://localhost:3000/events");
-  //     return {
-  //       events: response.data
-  //     };
-  //   } catch (e) {
-  //     ctx.error({ statusCode: 503, message: "server is not online" });
-  //   }
-  // }
 
   async fetch(ctx) {
     const { store, error } = ctx;
